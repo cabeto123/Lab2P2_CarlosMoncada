@@ -92,12 +92,16 @@ public class Lab2P2_CarlosMoncada {
                                         int poseliminar = eliminarchef(chefs);
                                         chefs.remove(poseliminar);
                                         System.out.println("Chef eliminado correctamente");    
+                                        }else{
+                                            System.out.println("No hay chef");
                                         }
                                         break;
                                         
                                     case 4:
                                         if (chefs.size()>0) {
                                         listarchef(chefs);    
+                                        }else{
+                                            System.out.println("No hay chef");
                                         }
                                         
                                         break;
@@ -145,13 +149,17 @@ public class Lab2P2_CarlosMoncada {
                                         if (meseros.size()>0) {
                                          
                                         int poseliminar = eliminarmeseros(meseros);
-                                        meseros.remove(meseros);
+                                        meseros.remove(poseliminar);
                                         System.out.println("Meseros eliminado correctamente");   
+                                        }else{
+                                        System.out.println("No hay mesero");
                                         }
                                         break;
                                     case 4:
                                         if (meseros.size()>0) {
                                         listarmeseros(meseros);    
+                                        }else{
+                                            System.out.println("No hay mesero");
                                         }
                                         
                                         break;
@@ -200,12 +208,16 @@ public class Lab2P2_CarlosMoncada {
                                         if (Bartenders.size()>0) {
                                         Bartenders.remove(poseliminar);    
                                         System.out.println("Bartenders eliminado correctamente");
+                                        }else{
+                                        System.out.println("No hay Bartender");
                                         }
                                         
                                         break;
                                     case 4:
                                         if (Bartenders.size()>0) {
                                         listarbartender(Bartenders);    
+                                        }else{
+                                        System.out.println("No hay Bartender");
                                         }
                                         
                                         break;
@@ -673,6 +685,7 @@ public class Lab2P2_CarlosMoncada {
         int cantlicores;
         System.out.println("\n\n\n");
         System.out.println("Digite el nombre del Bartender");
+        nombre = entrada.nextLine();
         nombre = entrada.nextLine();
         System.out.println("Digite su edad");
         edad = entrada.nextInt();
